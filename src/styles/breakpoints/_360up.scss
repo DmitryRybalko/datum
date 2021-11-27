@@ -1,0 +1,48 @@
+.header {
+  &__subtitle {
+    max-width: 21.4375rem;
+  }
+}
+
+.main {
+  &__heading {
+    max-width: 21.4375rem;
+  }
+  &__subtitle {
+    max-width: 21.4375rem;
+  }
+  &__heading-industries {
+    margin-bottom: 3.125rem;
+  }
+  &__industry {
+    width: 10.1875rem;
+    min-height: 10.6875rem;
+  }
+  &__leadership-section {
+    align-items: center;
+  }
+  &__member {
+    width: 21.4375rem;
+  }
+  &__advisors-section {
+    align-items: center;
+  }
+}
+
+.footer {
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  &__text {
+    color: $cSecondaryLightest;
+    font-size: 0.875rem;
+    max-width: 21.4375rem;
+    margin-bottom: 0.625rem;
+  }
+  &__list {
+    padding-right: 81px;
+  }
+}

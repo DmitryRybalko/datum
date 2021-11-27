@@ -1,0 +1,63 @@
+.header {
+  &__button-primary {
+    width: 100%;
+    max-width: 16.25rem;
+    margin-bottom: 2.5rem;
+  }
+  &__title {
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+    max-width: 26.25rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    max-width: 26.25rem;
+    line-height: 1.625rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.main {
+  &__heading {
+    font-size: 3rem;
+    line-height: 3.625rem;
+    max-width: 26.25rem;
+  }
+  &__button-primary {
+    max-width: 16.25rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    max-width: 25.9375rem;
+  }
+  &__manufacturing-section {
+    align-items: center;
+  }
+  &__subtitle-manufacturing {
+    font-size: 1rem;
+    max-width: 26.25rem;
+    line-height: 1.625rem;
+  }
+  &__manufacturing-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.footer {
+  &__text {
+    font-size: 1rem;
+    max-width: 26.25rem;
+    line-height: 1.625rem;
+  }
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0.9375rem;
+  }
+  &__copyright {
+    font-size: 1rem;
+    line-height: 1.4375rem;
+  }
+}

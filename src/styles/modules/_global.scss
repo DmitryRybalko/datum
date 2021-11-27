@@ -1,0 +1,130 @@
+body {
+  background-color: $cPrimary;
+  color: $cWhite;
+  font-family: $fMukta;
+  font-size: 16px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  line-height: 1.66rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  padding: 0 1.25rem 0 1.25rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 75rem;
+}
+
+.button-arrow {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: $cBlue;
+  font-weight: 700;
+}
+
+.button-text {
+  display: inline-block;
+  padding-right: 0.625rem;
+}
+
+.arrow-icon {
+  padding-bottom: 0.125rem;
+}
+
+.button-primary {
+  background-color: $cBlue;
+  color: $cWhite;
+  min-height: 3.75rem;
+  font-weight: 700;
+}
+
+.header__burger-btn {
+  background-color: transparent;
+}
+
+.subtitle {
+  color: $cSecondaryLightest;
+  line-height: 1.625rem;
+  word-wrap: break-word;
+}
+
+.main__heading {
+  font-size: 3rem;
+  line-height: 3.625rem;
+}
+
+.member-name {
+  text-transform: uppercase;
+  line-height: 1.6875rem;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.form-input {
+  min-height: 2.9375rem;
+  font-size: 1rem;
+  font-family: $fMukta;
+  color: $cWhite;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $cSecondaryLight;
+  outline: none;
+  &:focus + .form-label {
+    color: $cSecondaryLightest;
+    top: -1.6875rem;
+    font-size: 0.75rem;
+  }
+}
+
+.form-item {
+  position: relative;
+  & .input-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: $cWhite;
+    transition: width 0.2s linear;
+  }
+  & .form-input:focus ~ .input-underline::before {
+    width: 100%;
+  }
+}
+
+.form-label {
+  text-transform: uppercase;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  line-height: 1.6875rem;
+  pointer-events: none;
+  transition: all 0.2s linear;
+  transition-property: top, font-size, color;
+}
+
+.connect-item {
+  margin-bottom: 0.625rem;
+}

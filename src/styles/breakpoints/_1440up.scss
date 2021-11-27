@@ -1,0 +1,112 @@
+.header {
+  min-height: 42.4375rem;
+  &__wrapper {
+    &::before {
+      content: url("../assets/images/lines-type1.svg");
+      position: absolute;
+      z-index: -1;
+      top: 21.875rem;
+      transform: translate(-9.5%);
+    }
+  }
+  &__title {
+    max-width: 28.75rem;
+    margin-bottom: 1.0625rem;
+  }
+
+  &__subtitle {
+    max-width: 28.75rem;
+    margin-bottom: 3.125rem;
+  }
+  &__button-primary {
+    width: 17.5rem;
+  }
+  &__img {
+    width: 28.75rem;
+    height: 42.4375rem;
+  }
+}
+
+.main {
+  &__section-service {
+    max-width: 60rem;
+    &::before {
+      content: url("../assets/images/lines-type2.svg");
+      position: absolute;
+      z-index: -1;
+      top: 30.0625rem;
+    }
+  }
+  &__industry {
+    width: 16.25rem;
+    height: 10.4375rem;
+  }
+  &__manufacturing-section {
+    &::before {
+      content: url("../assets/images/lines-type1.svg");
+      position: absolute;
+      z-index: -1;
+      top: 25.75rem;
+      transform: translate(-9.5%);
+    }
+  }
+  &__info {
+    &::before {
+      content: url("../assets/images/back-square-left.png");
+      position: absolute;
+      z-index: -1;
+      transform: translateX(-20%);
+    }
+  }
+  &__manufacturing-list {
+    gap: 2.5rem;
+  }
+  &__importance-section {
+    &::before {
+      content: url("../assets/images/back-square-right.png");
+      position: absolute;
+      z-index: -1;
+      transform: translateX(40.3%);
+    }
+  }
+  &__leadership-section {
+    &::after {
+      content: url("../assets/images/background.png");
+      position: absolute;
+      z-index: -1;
+      transform: translateY(-9.5%);
+    }
+    &::before {
+      content: url("../assets/images/lines-type2.svg");
+      position: absolute;
+      z-index: -2;
+      top: 30rem;
+    }
+  }
+  &__leadership-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__advisors-section {
+    &::before {
+      content: url("../assets/images/lines-type3.svg");
+      position: absolute;
+      z-index: -1;
+      top: 41.8125rem;
+    }
+  }
+  &__advisors {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__contact-section {
+    &::before {
+      content: url("../assets/images/back-square-right.png");
+      position: absolute;
+      z-index: -1;
+      top: 3.3125rem;
+      transform: translateX(62.5%);
+    }
+  }
+  &__contact-form {
+    min-height: 34.75rem;
+  }
+}

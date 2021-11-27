@@ -1,0 +1,319 @@
+.modal {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.3125rem);
+  &__inner {
+    height: 35rem;
+  }
+}
+
+.header {
+  margin-bottom: 12.5rem;
+  &__burger {
+    display: none;
+  }
+  &__container {
+    top: 2.5rem;
+  }
+  &__nav {
+    min-height: 2.25rem;
+  }
+  &__logo {
+    width: 3.75rem;
+    height: 2.25rem;
+    margin-right: auto;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 3.3125rem;
+    &:last-child {
+      margin-right: 9.125rem;
+    }
+  }
+  &__link {
+    color: $cWhite;
+    font-weight: 700;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $cBlue;
+    }
+  }
+  &__wrapper {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8.875rem;
+  }
+  &__title {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 1.0625rem;
+  }
+  &__img {
+    width: 26.875rem;
+    height: 40.5625rem;
+  }
+}
+
+.main {
+  &__section-service {
+    margin: 0 auto;
+    margin-bottom: 12.5rem;
+    max-width: 58.125rem;
+    min-height: 39.5rem;
+  }
+  &__heading-service {
+    margin-bottom: 1.875rem;
+  }
+  &__subtitle {
+    max-width: 27.5rem;
+    margin-bottom: 10rem;
+  }
+  &__service-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 100%;
+    min-height: 20.75rem;
+  }
+  &__service {
+    max-width: 28.75rem;
+    padding: 0 3.75rem 0 3.75rem;
+    min-height: 20.75rem;
+    height: fit-content;
+    background-color: $cPrimaryLighter;
+    position: relative;
+  }
+  &__service-img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2.5rem;
+  }
+  &__subtitle-service {
+    font-size: 1rem;
+    max-width: 21.25rem;
+    margin-bottom: 1.875rem;
+  }
+  &__h3 {
+    margin-top: 7.5rem;
+    margin-bottom: 0.9375rem;
+    line-height: 1.6875rem;
+  }
+  &__button {
+    margin-bottom: 3.75rem;
+  }
+  &__industries-section {
+    min-height: 32rem;
+    margin-bottom: 12.5rem;
+  }
+  &__heading-industries {
+    max-width: 26.125rem;
+    margin-bottom: 5rem;
+  }
+  &__industries {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+  &__industry-icon {
+    margin-bottom: 1.375rem;
+  }
+  &__manufacturing-section {
+    flex-direction: row;
+    margin-bottom: 12.5rem;
+  }
+  &__info {
+    width: 50%;
+    position: relative;
+  }
+  &__heading-manufacturing {
+    max-width: 22.5rem;
+    margin: 6.625rem 0 1.875rem 0;
+  }
+  &__subtitle-manufacturing {
+    max-width: 28.75rem;
+  }
+  &__manufacturing-list {
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+  &__item {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 10rem;
+    min-height: 6.8125rem;
+  }
+  &__icon {
+    margin-right: 0;
+    margin-bottom: 1.375rem;
+  }
+  &__industry__name {
+    font-size: 0.88rem;
+  }
+  &__importance-section {
+    min-height: 39.375rem;
+    margin-bottom: 12.5rem;
+  }
+  &__heading-importance {
+    max-width: 47.5rem;
+    margin: 6.25rem 0 10rem 0;
+  }
+  &__importance-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  &__importance {
+    max-width: 22.5rem;
+    min-height: 15.875rem;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+  &__subtitle-importance {
+    max-width: 17.5rem;
+  }
+  &__importance-img {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__leadership-section {
+    min-height: 42.6875rem;
+    margin-bottom: 15.625rem;
+  }
+  &__heading-leadership {
+    margin-bottom: 5rem;
+  }
+  &__leadership-team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 3.125rem;
+  }
+  &__member {
+    max-width: 22.5rem;
+    min-height: 27.1875rem;
+  }
+  &__member-info {
+    padding: 2.5rem;
+  }
+  &__advisors-section {
+    align-items: center;
+    min-height: 42.6875rem;
+    margin-bottom: 12.5rem;
+  }
+  &__advisors {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  &__contact-section {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 42.4375rem;
+    margin-bottom: 13.625rem;
+  }
+  &__contact {
+    max-width: 22.5rem;
+    width: 22.5rem;
+    min-height: 34.75rem;
+    margin-top: 4.375rem;
+  }
+  &__col2 {
+    display: block;
+  }
+  &__heading-contact {
+    margin-bottom: 5rem;
+  }
+  &__form-item {
+    margin-bottom: 2.5rem;
+    &:last-of-type {
+      margin-bottom: 3.125rem;
+    }
+  }
+}
+
+.footer {
+  align-items: center;
+  min-height: 25.6875rem;
+  line-height: 1.6875rem;
+  &__row1 {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    background-color: $cPrimaryDark;
+    min-height: 21.25rem;
+  }
+  &__logo {
+    margin-right: 100px;
+    align-items: flex-start;
+    margin-bottom: 0;
+    width: 16.25rem;
+  }
+  &__text {
+    width: 15.625rem;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  &__list {
+    width: fit-content;
+    margin-right: 4.375rem;
+  }
+  &__row2 {
+    min-height: 4.4375rem;
+  }
+  &__social-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  &__social-link {
+    transition: all 0.2s linear;
+    transition-property: background-color;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    &:hover,
+    &:focus {
+      background-color: $cBlue;
+      .footer__social-icon {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(98deg)
+          brightness(102%) contrast(104%);
+      }
+    }
+  }
+  &__copyright {
+    font-size: 0.875rem;
+    line-height: 1.4375rem;
+  }
+}
+
+.button-primary {
+  transition: background-color 0.2s linear;
+  &:hover,
+  &:focus {
+    background-color: $cBlueLight;
+  }
+}
+
+.button-arrow {
+  transition: all 0.2s linear;
+  transition-property: color, filter;
+  &:focus,
+  &:hover {
+    .arrow-icon {
+      filter: invert(47%) sepia(86%) saturate(1631%) hue-rotate(207deg)
+        brightness(102%) contrast(104%);
+    }
+    .button-text {
+      color: $cBlueLight;
+    }
+  }
+}
+
+.link-hover {
+  transition: color 0.2s linear;
+  &:hover,
+  &:focus {
+    color: $cBlue;
+  }
+}
