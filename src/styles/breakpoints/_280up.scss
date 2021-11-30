@@ -199,6 +199,15 @@
     margin-top: 7.25rem;
     position: relative;
   }
+  &__wrapper-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+  }
+
   &__button-primary {
     width: 100%;
     max-width: 21.4375rem;
@@ -211,11 +220,20 @@
     word-wrap: break-word;
     margin-bottom: 1.5rem;
   }
+  &__title-center {
+    max-width: 100%;
+    text-align: center;
+  }
   &__subtitle {
     font-size: 0.875rem;
     max-width: 15rem;
     word-wrap: break-word;
     line-height: 1.375rem;
+    margin-bottom: 2.5rem;
+  }
+  &__subtitle-center {
+    text-align: center;
+    max-width: 35rem;
     margin-bottom: 2.5rem;
   }
   &__img {
@@ -332,11 +350,17 @@
   &__industry-icon {
     margin-bottom: 1.25rem;
   }
-  &__industry__name {
+  &__industry-name {
     font-size: 1rem;
     line-height: 1.6875rem;
     font-weight: 600;
     text-transform: uppercase;
+  }
+  &__manufacturers-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 38.1875rem;
+    margin-bottom: 5rem;
   }
   &__manufacturing-section {
     display: flex;
@@ -349,6 +373,9 @@
     position: relative;
   }
   &__heading-manufacturing {
+    margin-bottom: 1.5rem;
+  }
+  &__heading-info {
     margin-bottom: 1.5rem;
   }
   &__subtitle-manufacturing {
@@ -499,6 +526,207 @@
   &__col2 {
     display: none;
   }
+  &__procurement-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  &__heading-procurement {
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  &__procurement-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    max-width: 100%;
+    min-height: 21.5rem;
+  }
+  &__procurement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 21.4375rem;
+    min-height: 17.1875rem;
+    padding: 2.5rem 1.5rem;
+    background-color: $cPrimaryLighter;
+  }
+  &__procurement-info {
+    text-align: center;
+    line-height: 1.375rem;
+    max-width: 18.4375rem;
+    word-wrap: break-word;
+  }
+  &__work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  &__heading-work {
+    margin-bottom: 3.125rem;
+  }
+  &__work-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+  &__work-item {
+    background-color: $cPrimaryLighter;
+    min-height: 28.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.5rem 2.5rem 1.5rem;
+    line-height: 1.375rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:nth-child(odd) {
+      &::before {
+        content: url("../../assets/images/particles-mobile.png");
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+    &:nth-child(even) {
+      &::before {
+        content: url("../../assets/images/lines-mobile.png");
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &__hire-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  &__hire-heading {
+    margin-bottom: 3.125rem;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  &__hire-list {
+    margin-bottom: 2.5rem;
+  }
+  &__hire-item {
+    margin-bottom: 2.5rem;
+  }
+  &__reason {
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1.6875rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  &__reason-text {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: $cSecondaryLightest;
+  }
+  &__supplier-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 11.25rem;
+    position: relative;
+  }
+  &__supplier-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  &__supplier-subtitle {
+    max-width: 21.4375rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  &__supplier-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+  &__supplier-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    background-color: $cPrimaryLight;
+    max-width: 21.4375rem;
+    min-height: 13.125rem;
+  }
+  &__supplier-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__supplier-text {
+    text-align: center;
+    max-width: 18.4375rem;
+    word-wrap: break-word;
+    line-height: 1.625rem;
+    color: $cGray;
+  }
+  &__cost-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+  &__cost-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    max-width: 21.4375rem;
+    word-wrap: break-word;
+  }
+  &__cost-subtitle {
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 21.4375rem;
+    margin-bottom: 6.25rem;
+  }
+  &__templates-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  &__templates-heading {
+    margin-bottom: 1.5rem;
+  }
+  &__templates-subtitle {
+    max-width: 21.4375rem;
+    margin-bottom: 3.125rem;
+    word-wrap: break-word;
+  }
+  &__templates-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  &__templates-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    background-color: $cPrimaryLighter;
+    min-height: 10.4375rem;
+    max-width: 10.25rem;
+  }
+  &__templates-info {
+    text-align: center;
+  }
 }
 
 .footer {
@@ -607,4 +835,18 @@
     line-height: 1.375rem;
     color: $cSecondaryLightest;
   }
+}
+
+.diagonal-arrow {
+  margin-bottom: 1.5rem;
+}
+
+.item-name {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.item-work {
+  display: flex;
+  flex-direction: column;
 }

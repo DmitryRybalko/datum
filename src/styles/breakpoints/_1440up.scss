@@ -1,5 +1,4 @@
 .header {
-  min-height: 42.4375rem;
   &__wrapper {
     &::before {
       content: url("../assets/images/lines-type1.svg");
@@ -9,9 +8,21 @@
       transform: translate(-9.5%);
     }
   }
+  &__wrapper-center {
+    &::before {
+      content: url("../assets/images/lines-type2.svg");
+      position: absolute;
+      z-index: -1;
+      top: -11rem;
+    }
+  }
   &__title {
     max-width: 28.75rem;
     margin-bottom: 1.0625rem;
+  }
+
+  &__title-center {
+    max-width: 40rem;
   }
 
   &__subtitle {
@@ -57,6 +68,9 @@
       z-index: -1;
       transform: translateX(-20%);
     }
+  }
+  &__heading-info {
+    width: 35rem;
   }
   &__manufacturing-list {
     gap: 2.5rem;
@@ -106,7 +120,44 @@
       transform: translateX(62.5%);
     }
   }
+  &__procurement-section {
+    &::before {
+      content: url("../assets/images/lines-type1.svg");
+      position: absolute;
+      z-index: -2;
+      top: -8.75rem;
+    }
+    &::after {
+      content: url("../assets/images/back-square-right.png");
+      position: absolute;
+      z-index: -1;
+      top: -1.875rem;
+      transform: translateX(39.7%);
+    }
+  }
   &__contact-form {
     min-height: 34.75rem;
+  }
+  &__supplier-section {
+    &::after {
+      content: url("../assets/images/background-2.png");
+      position: absolute;
+      z-index: -1;
+      transform: translateY(-12%);
+    }
+    &::before {
+      content: url("../assets/images/lines-type2.svg");
+      position: absolute;
+      z-index: -1;
+      transform: translateY(50%);
+    }
+  }
+  &__cost-section {
+    &::before {
+      content: url("../assets/images/lines-type1.svg");
+      position: absolute;
+      z-index: -2;
+      top: 33.5rem;
+    }
   }
 }

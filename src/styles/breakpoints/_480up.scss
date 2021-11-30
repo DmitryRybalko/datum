@@ -33,6 +33,12 @@
   &__manufacturing-section {
     align-items: center;
   }
+  &__orbit1 {
+    max-width: 25.375rem;
+  }
+  &__orbit2 {
+    max-width: 21.4375rem;
+  }
   &__subtitle-manufacturing {
     font-size: 1rem;
     max-width: 26.25rem;
@@ -41,6 +47,13 @@
   &__manufacturing-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+  &__manufacturers-section {
+    align-items: center;
+  }
+  &__templates-item {
+    min-height: 10.4375rem;
+    max-width: 11.875rem;
   }
 }
 

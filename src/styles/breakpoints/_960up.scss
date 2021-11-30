@@ -45,10 +45,20 @@
     align-items: center;
     margin-top: 8.875rem;
   }
+  &__wrapper-center {
+    //margin-top: 142px;
+    margin-top: 225px;
+  }
   &__title {
     font-size: 5rem;
     line-height: 6rem;
     margin-bottom: 1.0625rem;
+  }
+  &__title-center {
+    max-width: 40rem;
+  }
+  &__subtitle-center {
+    margin-bottom: 3.125rem;
   }
   &__img {
     width: 26.875rem;
@@ -117,6 +127,18 @@
   &__industry-icon {
     margin-bottom: 1.375rem;
   }
+  &__manufacturers-section {
+    flex-direction: row;
+    margin-bottom: 14.0625rem;
+    justify-content: space-between;
+  }
+  &__orbit1 {
+    max-width: 39.25rem;
+  }
+  &__orbit2 {
+    max-width: 36.6875rem;
+    //margin-left: 110px;
+  }
   &__manufacturing-section {
     flex-direction: row;
     margin-bottom: 12.5rem;
@@ -128,6 +150,9 @@
   &__heading-manufacturing {
     max-width: 22.5rem;
     margin: 6.625rem 0 1.875rem 0;
+  }
+  &__heading-info {
+    margin: 4.375rem 0 1.875rem 0;
   }
   &__subtitle-manufacturing {
     max-width: 28.75rem;
@@ -147,7 +172,7 @@
     margin-right: 0;
     margin-bottom: 1.375rem;
   }
-  &__industry__name {
+  &__industry-name {
     font-size: 0.88rem;
   }
   &__importance-section {
@@ -217,6 +242,26 @@
   &__col2 {
     display: block;
   }
+  &__procurement-section {
+    margin-bottom: 12.5rem;
+  }
+  &__procurement-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__heading-procurement {
+    min-width: 641px;
+    word-wrap: break-word;
+    margin-bottom: 5rem;
+  }
+  &__procurement-item {
+    max-width: 28.75rem;
+    min-height: 21.5rem;
+    padding: 3.75rem;
+  }
+  &__procurement-info {
+    max-width: 21.25rem;
+    line-height: 1.625rem;
+  }
   &__heading-contact {
     margin-bottom: 5rem;
   }
@@ -225,6 +270,81 @@
     &:last-of-type {
       margin-bottom: 3.125rem;
     }
+  }
+  &__work-section {
+    margin-bottom: 12.5rem;
+  }
+  &__work-item {
+    min-height: 23.1875rem;
+    justify-content: center;
+    padding: 5rem 3.75rem 5rem 3.75rem;
+    &:nth-child(odd) {
+      &::before {
+        content: url("../../assets/images/particles.png");
+      }
+    }
+    &:nth-child(even) {
+      &::before {
+        content: url("../../assets/images/lines.png");
+        left: 0;
+      }
+    }
+  }
+  &__hire-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+  }
+  &__reason-text {
+    max-width: 25.625rem;
+  }
+  &__supplier-section {
+    margin-bottom: 15.625rem;
+  }
+  &__supplier-heading {
+    max-width: 29.625rem;
+    word-wrap: break-word;
+    margin-bottom: 1.25rem;
+  }
+  &__supplier-subtitle {
+    max-width: 35rem;
+    margin-bottom: 5rem;
+  }
+  &__supplier-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__supplier-text {
+    max-width: 17.5rem;
+  }
+  &__supplier-icon {
+    width: 2.375rem;
+    height: 2.375rem;
+    margin-bottom: 2.5rem;
+  }
+  &__cost-section {
+    margin-bottom: 12.5rem;
+  }
+  &__cost-heading {
+    margin-bottom: 1.25rem;
+    max-width: 35rem;
+  }
+  &__cost-subtitle {
+    max-width: 35rem;
+    margin-bottom: 10rem;
+  }
+  &__templates-section {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+  }
+  &__templates-wrapper {
+    gap: 2.5rem;
+  }
+  &__templates-item {
+    padding: 2.5rem 2.1875rem;
+    min-height: 8.9375rem;
+    max-width: 16.25rem;
   }
 }
 
@@ -240,7 +360,7 @@
     min-height: 21.25rem;
   }
   &__logo {
-    margin-right: 100px;
+    margin-right: 6.25rem;
     align-items: flex-start;
     margin-bottom: 0;
     width: 16.25rem;
@@ -316,4 +436,16 @@
   &:focus {
     color: $cBlue;
   }
+}
+
+.diagonal-arrow {
+  margin-bottom: 2.5rem;
+}
+
+.item-name {
+  margin-bottom: 0.875rem;
+}
+
+.item-work-right {
+  margin-left: clamp(22.5rem, 49vw, 38.4375rem);
 }

@@ -70,6 +70,13 @@
   &__heading-manufacturing {
     max-width: 32.5rem;
   }
+  &__heading-info {
+    max-width: 35rem;
+  }
+  &__work-info {
+    max-width: 28.75rem;
+    word-wrap: break-word;
+  }
 }
 
 .footer {
