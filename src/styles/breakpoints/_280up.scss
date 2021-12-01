@@ -250,6 +250,7 @@
 }
 
 .main {
+  min-height: 100vh;
   &__heading {
     font-size: 2rem;
     line-height: 2.4rem;
@@ -454,7 +455,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 343px;
+    max-width: 21.4375rem;
     min-height: 26.4375rem;
     background-color: $cSecondary;
   }
