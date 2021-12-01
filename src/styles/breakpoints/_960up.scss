@@ -46,8 +46,7 @@
     margin-top: 8.875rem;
   }
   &__wrapper-center {
-    //margin-top: 142px;
-    margin-top: 225px;
+    margin-top: 14.0625rem;
   }
   &__title {
     font-size: 5rem;
@@ -137,7 +136,6 @@
   }
   &__orbit2 {
     max-width: 36.6875rem;
-    //margin-left: 110px;
   }
   &__manufacturing-section {
     flex-direction: row;
@@ -250,7 +248,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   &__heading-procurement {
-    min-width: 641px;
+    min-width: 40.0625rem;
     word-wrap: break-word;
     margin-bottom: 5rem;
   }
@@ -346,6 +344,61 @@
     padding: 2.5rem 2.1875rem;
     min-height: 8.9375rem;
     max-width: 16.25rem;
+  }
+  &__hardware-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 35rem;
+    margin-bottom: 12.5rem;
+  }
+  &__hardware-title {
+    font-size: 3rem;
+    line-height: 3.625rem;
+    margin-bottom: 0;
+    max-width: 28.75rem;
+  }
+  &__hardware-item {
+    width: clamp(21.4375rem, 40vw, 35rem);
+  }
+  &__experience-section {
+    min-height: 21.5625rem;
+    margin-bottom: 15.625rem;
+  }
+  &__experience-heading {
+    margin-bottom: 1.25rem;
+    max-width: 35.4375rem;
+  }
+  &__experience-subtitle {
+    margin-bottom: 5rem;
+  }
+  &__experience-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  &__experience-item {
+    flex-direction: column;
+    min-height: 6.8125rem;
+    min-width: 10rem;
+  }
+  &__experience-icon {
+    margin-bottom: 1.375rem;
+  }
+  &__experience-name {
+    padding: 0;
+  }
+  &__research-section {
+    margin-bottom: 12.5rem;
+  }
+  &__connect-section {
+    margin-bottom: 12.5rem;
+  }
+  &__connect {
+    width: 35rem;
+    max-width: 35rem;
+  }
+  &__heading-connect {
+    margin-bottom: 5rem;
   }
 }
 
@@ -449,4 +502,19 @@
 
 .item-work-right {
   margin-left: clamp(22.5rem, 49vw, 38.4375rem);
+}
+
+.card {
+  min-height: 23.1875rem;
+  justify-content: center;
+  padding: 5rem 3.75rem 5rem 3.75rem;
+}
+
+.card-heading {
+  margin-bottom: 1.25rem;
+}
+
+.card-text {
+  max-width: 28.75rem;
+  line-height: 1.625rem;
 }

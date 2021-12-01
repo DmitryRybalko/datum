@@ -160,4 +160,33 @@
       top: 33.5rem;
     }
   }
+  &__experience-section {
+    &::before {
+      content: url("../assets/images/lines-type2.svg");
+      position: absolute;
+      z-index: -2;
+      top: -27.5rem;
+    }
+    // &::after {
+    //   content: url("../assets/images/background-2.png");
+    //   position: absolute;
+    //   z-index: -1;
+    //   transform: translateY(-12%);
+    //   z-index: -3;
+    // }
+  }
+  &__experience-wrapper {
+    gap: 5.625rem;
+  }
+  &__experience-name {
+    width: 100%;
+  }
+  &__connect-section {
+    &::before {
+      content: url("../assets/images/lines-type1.svg");
+      position: absolute;
+      z-index: -2;
+      top: 23.5rem;
+    }
+  }
 }
