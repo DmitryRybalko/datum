@@ -207,7 +207,19 @@
     margin-top: 5rem;
     position: relative;
   }
-
+  &__blog {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11.25rem;
+  }
+  &__blog-heading {
+    line-height: 2.375rem;
+    margin-bottom: 1.5rem;
+  }
+  &__blog-subtitle {
+    line-height: 1.375rem;
+    max-width: 21.4375rem;
+  }
   &__button-primary {
     width: 100%;
     max-width: 21.4375rem;
@@ -825,6 +837,46 @@
     flex-direction: column;
     max-width: 35rem;
   }
+  &__articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    justify-items: center;
+    margin-bottom: 5rem;
+  }
+  &__article {
+    max-width: 21.4375rem;
+    position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $cSecondaryLighter;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(2.5rem);
+    }
+  }
+  &__article-link {
+    text-decoration: none;
+    color: $cWhite;
+  }
+  &__article-img-container {
+    height: 15rem;
+    margin-bottom: 1.5rem;
+  }
+  &__article-img {
+    min-height: 15rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__article-heading {
+    margin-bottom: 0.75rem;
+  }
+  &__article-txt {
+    max-width: 22.5rem;
+  }
 }
 
 .footer {
@@ -976,4 +1028,9 @@
 .card-text {
   max-width: 18.4375rem;
   word-wrap: break-word;
+}
+
+.btn-blog {
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
