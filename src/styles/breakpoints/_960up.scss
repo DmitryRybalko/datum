@@ -7,7 +7,7 @@
 }
 
 .header {
-  margin-bottom: 12.5rem;
+  margin-bottom: 9.375rem;
   &__burger {
     display: none;
   }
@@ -70,6 +70,12 @@
   &__blog-subtitle {
     line-height: 1.625rem;
     max-width: 35rem;
+  }
+  &__blog-navigation {
+    margin-top: 8.75rem;
+  }
+  &__blog-nav-link {
+    line-height: 1.4375rem;
   }
 }
 
@@ -438,6 +444,56 @@
   }
 }
 
+.article {
+  &__h1 {
+    font-size: 3rem;
+    line-height: 3.625rem;
+    margin-bottom: 1.875rem;
+  }
+  &__h {
+    margin-bottom: 1.875rem;
+  }
+  &__author-info {
+    margin-bottom: 0;
+  }
+  &__text-big {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    margin-bottom: 1.875rem;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.875rem;
+  }
+  &__text-final {
+    margin-bottom: 3.75rem;
+  }
+  &__list {
+    margin-bottom: 1.875rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  &__item {
+    margin-bottom: 1.25rem;
+    & span {
+      margin-right: 0.625rem;
+    }
+  }
+  &__stat {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  &__stats-icon {
+    margin-right: 0.625rem;
+  }
+  &__stats-number {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
+}
+
 .footer {
   align-items: center;
   min-height: 25.6875rem;
@@ -560,4 +616,78 @@
   padding-right: 2.5rem;
   font-size: 3rem;
   line-height: 3.625rem;
+}
+
+.person {
+  flex-direction: row;
+  justify-content: space-between;
+  &__pic {
+    margin-right: 1.25rem;
+  }
+  &__time {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+.social-link {
+  width: 2.375rem;
+  height: 2.375rem;
+  transition: background-color 0.2s linear;
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  &:hover,
+  &:focus {
+    background-color: $cBlue;
+    .social-icon {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(98deg)
+        brightness(102%) contrast(104%);
+    }
+  }
+}
+
+.blockquote {
+  padding: 3.75rem 3.75rem 3.75rem 6.25rem;
+  background: $cPrimaryLighter url("../../assets/images/quote.png") 3.75rem
+    3.75rem no-repeat;
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+  }
+}
+
+.comment {
+  margin-bottom: 5rem;
+  &__text {
+    margin: 1.5rem 0 0.9375rem 0;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  &__show {
+    &:hover,
+    :focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.comment-form {
+  &__row {
+    padding: 1.875rem;
+  }
+  &__textarea {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  &__emoji {
+    margin-right: 1.625rem;
+  }
+  &__interaction {
+    cursor: pointer;
+  }
+}
+
+.user-img {
+  margin-right: 1.25rem;
 }
